@@ -1,13 +1,13 @@
-# Team4 STUDY 다운로드
+# SSAM 다운로드
 
-과목별 강의자료(PDF)를 넣어두면 AI 튜터가 공부 폴더 전체를 찾아 읽고, 페이지 출처를 달아 설명해 주는 공부 앱입니다.
+**SSAM** (Special Study Assist Model, 옛 이름 Team4 STUDY) — 과목별 강의자료(PDF)를 넣어두면 AI 튜터가 공부 폴더 전체를 찾아 읽고, 페이지 출처를 달아 설명해 주는 공부 앱입니다.
 
 ## ⬇️ 최신 버전 받기
 
 **[Releases → 최신 버전](https://github.com/DH-WEST-coder/team4-study-releases/releases/latest)** 에서 받으세요.
 
-- **윈도우 (64비트):** `Team4-STUDY-Setup-x.y.z.exe`
-- **맥 (Apple Silicon):** `Team4-STUDY-mac-arm64-x.y.z.zip`
+- **윈도우 (64비트):** `SSAM-Setup-x.y.z.exe`
+- **맥 (Apple Silicon):** `SSAM-mac-arm64-x.y.z.zip`
 
 ## 설치
 
@@ -17,12 +17,12 @@
 3. 처음 화면 안내대로 공부 폴더를 만들고 AI(ChatGPT 계정 등)를 연결합니다.
 
 **맥**
-1. zip을 풀고 `Team4 STUDY.app`을 응용 프로그램 폴더로 옮깁니다.
+1. zip을 풀고 `SSAM.app`을 응용 프로그램 폴더로 옮깁니다.
 2. 처음 열면 "Apple은 악성 코드가 없음을 확인할 수 없습니다" 창이 뜹니다. **완료**를 누르고
    **시스템 설정 → 개인정보 보호 및 보안** 맨 아래에서 **그래도 열기**를 누릅니다. (정식 서명을 안 한 앱이라 뜨는 경고입니다.)
 3. 그래도 "손상되었기 때문에 열 수 없습니다"가 뜨면 터미널에서 아래 한 줄을 실행한 뒤 다시 엽니다.
    ```
-   xattr -cr "/Applications/Team4 STUDY.app"
+   xattr -cr "/Applications/SSAM.app"
    ```
 
 ## 업데이트
