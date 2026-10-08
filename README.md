@@ -27,12 +27,16 @@
 3. 이후 업데이트는 앱이 알아서 받아 두고, 재시작하면 적용돼요.
 
 **맥 (Apple Silicon)** — `SSAM-mac-arm64-x.y.z.zip`
-1. zip을 받아요(보통 **다운로드** 폴더에 저장돼요).
-2. **터미널**에 아래 한 줄을 붙여넣어요. 응용 프로그램 폴더에 설치하고 바로 열어 줘요. 업데이트할 때도 같은 명령이에요.
+1. zip을 받아요(보통 **다운로드** 폴더에 저장돼요). 새로 받은 버전의 zip이 맞는지 파일 이름의 숫자를 확인해요. 예전 zip만 있으면 예전 버전이 설치돼요.
+2. **터미널**에 아래 한 줄을 붙여넣어요. 가장 최근에 받은 zip을 **다운로드** 폴더의 `SSAM-new` 폴더에 풀고 Finder로 열어 줘요. 처음 설치할 때도, 업데이트할 때도 같은 명령이에요. (앞의 `rm -rf`는 지난번에 푼 `SSAM-new` 폴더를 먼저 지워서 옛 파일과 섞이지 않게 해요.)
    ```
-   ditto -x -k "$(ls -t ~/Downloads/SSAM-mac-arm64-*.zip | head -1)" /Applications && xattr -cr /Applications/SSAM.app && open /Applications/SSAM.app
+   rm -rf ~/Downloads/SSAM-new && ditto -x -k --noqtn "$(ls -t ~/Downloads/SSAM-mac-arm64-*.zip | head -1)" ~/Downloads/SSAM-new && xattr -cr ~/Downloads/SSAM-new/SSAM.app && open ~/Downloads/SSAM-new
    ```
-   "손상되었기 때문에 열 수 없습니다"는 앱이 깨진 게 아니라 서명 없는 앱의 다운로드 표시 때문이에요. 위 명령의 `xattr -cr`이 지워 줘요.
+3. 열린 Finder 창의 **SSAM.app**을 **응용 프로그램** 폴더로 끌어다 놓아요. 이미 있으면 **대치**를 눌러요.
+
+"손상되었기 때문에 열 수 없습니다"는 앱이 깨진 게 아니라 서명 없는 앱의 다운로드 표시 때문이에요. 위 명령의 `xattr -cr`이 지워 줘요. 터미널로 응용 프로그램 폴더의 SSAM을 바로 덮어쓰면 macOS가 "Operation not permitted"로 막을 수 있어서, Finder로 끌어다 놓는 방법을 써요.
+
+0.1.10 버전부터는 앱 안의 업데이트가 기본이에요. macOS가 막으면 앱이 Finder를 열어 새 SSAM을 끌어다 놓을 수 있게 준비해 줘요.
 
 ## 처음 열면
 
