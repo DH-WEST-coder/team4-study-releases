@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SSAM</title>
-<meta name="description" content="내 강의자료를 근거로 답하고, 배운 것을 내 컴퓨터의 노트로 남겨 주는 AI 튜터 공부 앱. 맥·윈도우 무료 다운로드.">
+<meta name="description" content="강의자료를 바탕으로 답변하고, 공부한 내용을 내 컴퓨터 속 노트로 정리해 주는 AI 튜터. 맥·윈도우 무료 다운로드.">
 <meta property="og:title" content="SSAM — 내 자료로 공부하는 AI 튜터">
-<meta property="og:description" content="강의자료를 넣고 물어보면, 페이지 출처를 달아 설명하고 내가 고칠 수 있는 노트로 남겨요.">
+<meta property="og:description" content="강의자료를 넣고 질문하면 페이지 출처와 함께 설명하고, 언제든 고쳐 쓸 수 있는 노트로 정리해 줘요.">
 <meta property="og:image" content="screenshots/05-tutor.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -280,7 +280,7 @@ footer a { color: var(--muted); }
 <body>
 
 <div class="notice" id="notice">
-  SSAM <span data-version>최신 버전</span>이 나왔어요 · <a href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest" data-release-page>무엇이 달라졌나요</a>
+  SSAM <span data-version>최신 버전</span>이 나왔어요 · <a href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest" data-release-page>달라진 점 보기</a>
 </div>
 
 <nav class="nav" aria-label="주 메뉴">
@@ -307,25 +307,25 @@ footer a { color: var(--muted); }
 <section class="hero">
   <div class="wrap">
     <div class="chips">
-      <span class="chip">내 컴퓨터에 저장</span>
-      <span class="chip">페이지 출처가 달린 답</span>
+      <span class="chip">내 컴퓨터에 파일로 저장</span>
+      <span class="chip">답변마다 페이지 출처 표기</span>
       <span class="chip">쓰던 ChatGPT·Claude 구독 그대로</span>
     </div>
     <h1>내 강의자료로 공부하는<br><span class="hl">AI 튜터</span></h1>
-    <p class="sub">PDF를 넣고 물어보면, 튜터가 내 자료를 근거로 설명하고 배운 것과 헷갈린 것을 내가 고칠 수 있는 노트로 남겨요.</p>
+    <p class="sub">강의 PDF를 넣고 질문하면 자료 쪽수를 짚어가며 설명하고, 오늘 배운 내용과 헷갈린 점을 직접 수정할 수 있는 노트로 정리해 줘요.</p>
 
     <div class="dl-row">
       <a class="btn btn-primary" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span data-dl-label>SSAM 다운로드</span>
       </a>
-      <a class="btn btn-ghost" href="#install">다른 운영체제 · 설치 방법</a>
+      <a class="btn btn-ghost" href="#install">다른 운영체제 · 설치 안내</a>
     </div>
     <p class="dl-meta" data-dl-meta>macOS (Apple Silicon) · Windows 10/11 64비트</p>
     <p class="dl-note" data-dl-unsupported hidden></p>
 
     <div class="hero-shot">
-      <img src="screenshots/05-tutor.png" width="1440" height="900" alt="SSAM 화면: 왼쪽 자료 목록, 가운데 강의 PDF, 오른쪽 AI 튜터가 출처 링크와 함께 답하는 모습">
+      <img src="screenshots/05-tutor.png" width="1440" height="900" alt="SSAM 화면: 왼쪽 자료 목록, 가운데 강의 PDF, 오른쪽 AI 튜터 답변">
     </div>
   </div>
 </section>
@@ -338,17 +338,17 @@ footer a { color: var(--muted); }
     <div class="values">
       <div class="value">
         <span class="big">내 컴퓨터에 파일로</span>
-        <p>노트와 자료, 대화 기록은 서버가 아니라 내 공부 폴더에 평범한 마크다운 파일로 저장돼요. 앱을 지워도 그대로 남고, 메모장·Obsidian·VS Code로도 열려요.</p>
+        <p>정리한 노트와 대화 기록은 서버가 아니라 내 컴퓨터 공부 폴더에 일반 마크다운 파일로 저장돼요. 앱을 지워도 파일은 그대로 남아 메모장이나 Obsidian, VS Code로 언제든 열 수 있어요.</p>
         <span class="sample">~/Documents/SSAM/wiki/courses/미적분학.md</span>
       </div>
       <div class="value">
         <span class="big">내가 저장해야 남아요</span>
-        <p>튜터는 노트를 몰래 바꾸지 않아요. 공부를 마치면 기록 카드로 바뀔 내용을 먼저 보여 주고, 내가 확인하고 고친 것만 저장해요.</p>
+        <p>튜터가 마음대로 노트를 고쳐 쓰지 않아요. 공부가 끝나면 기록 카드로 정리될 내용을 먼저 보여 주고, 직접 확인하고 승인한 내용만 파일에 남겨요.</p>
         <span class="sample">노트 3개 저장 · 버리기</span>
       </div>
       <div class="value">
         <span class="big">쓰던 구독 그대로</span>
-        <p>ChatGPT Plus/Pro, Claude Pro/Max, Codex CLI 중 이미 쓰는 걸 연결해요. 새로 결제할 것도, API 키도 필요 없어요.</p>
+        <p>ChatGPT Plus/Pro, Claude Pro/Max, Codex CLI 중 평소 쓰던 계정을 연결하면 돼요. 추가 결제나 복잡한 API 키 발급 없이 바로 써보세요.</p>
         <span class="sample">ChatGPT로 로그인 ●</span>
       </div>
     </div>
@@ -360,23 +360,23 @@ footer a { color: var(--muted); }
   <div class="wrap">
     <p class="eyebrow">챗봇 공부 모드와 다른 점</p>
     <h2 class="sec-title">어제 어디까지 했는지<br>튜터가 기억하고 이어 가요</h2>
-    <p class="sec-lead">일반 챗봇은 대화가 끝나면 맥락이 흩어져요. SSAM은 과목마다 지금 위치와 헷갈리는 것을 노트에 적어 두고, 다음 공부를 거기서 시작해요.</p>
+    <p class="sec-lead">일반 챗봇은 대화창을 닫으면 공부 맥락이 끊겨요. SSAM은 과목별 진도와 헷갈린 내용을 노트에 남겨 두고, 다음 공부를 바로 거기서 이어서 시작해요.</p>
     <div class="compare">
       <div>
-        <span class="them">어디서 나온 말인지 모르는 답</span>
-        <span class="us">내 자료에서 찾은 근거</span>
-        <p>튜터가 내 PDF와 노트를 찾아 읽고 출처를 달아요. 누르면 그 페이지가 열려요.</p>
+        <span class="them">출처를 알 수 없는 답변</span>
+        <span class="us">내 자료에 기반한 답변</span>
+        <p>튜터가 내 PDF와 노트를 직접 찾아 읽고 쪽수를 남겨 줘요. 누르면 해당 페이지가 바로 열려요.</p>
         <span><span class="src">강의노트.pdf · p.3</span></span>
       </div>
       <div>
-        <span class="them">매번 처음부터 설명하기</span>
-        <span class="us">지난 기록에서 이어서</span>
-        <p>과목 Hub의 '지금 위치'와 '다음 시작점'을 읽고, 이어서 공부하기 한 번으로 시작해요.</p>
+        <span class="them">매번 상황 설명부터 다시 하기</span>
+        <span class="us">지난 공부에 이어서 시작</span>
+        <p>과목 Hub에 적힌 진도와 다음 시작점을 튜터가 기억해 둬서, '이어서 공부하기' 버튼 하나로 곧바로 시작해요.</p>
       </div>
       <div>
-        <span class="them">"이해했어요"로 끝</span>
-        <span class="us">맞혔는지로 판단</span>
-        <p>복습은 질문부터 해요. 다른 날 도움 없이 맞혀야 이해한 것으로 기록하고, 틀린 건 헷갈리는 것에 남겨요.</p>
+        <span class="them">끄덕이며 읽고 넘어가기</span>
+        <span class="us">직접 맞혔는지로 판단</span>
+        <p>복습할 땐 질문부터 던져요. 힌트 없이 스스로 맞혀야 온전히 이해한 것으로 기록하고, 틀린 건 헷갈리는 목록에 남겨 둬요.</p>
       </div>
     </div>
   </div>
@@ -391,18 +391,18 @@ footer a { color: var(--muted); }
     <div class="features">
       <div class="feature">
         <div class="f-text">
-          <h3>세 칸으로 공부해요</h3>
-          <p>왼쪽은 과목과 자료 목록, 가운데는 PDF와 노트, 오른쪽은 AI 튜터예요. 자료를 크게 보고 싶으면 <kbd>⌘\</kbd>, <kbd>⌘L</kbd>로 양옆을 접어요. 자주 여는 자료는 ★로 즐겨찾기하고, 최근 연 자료는 목록 위에 모여요.</p>
-          <p>노트는 쓰는 대로 서식이 보이는 편집기라서 수식(<code>$x^2$</code>)과 노트 링크(<code>[[개념]]</code>)를 바로 쓸 수 있어요.</p>
+          <h3>세 칸으로 나누어 공부해요</h3>
+          <p>왼쪽은 과목과 자료 목록, 가운데는 PDF와 마크다운 노트, 오른쪽은 AI 튜터 화면이에요. 자료를 넓게 보고 싶을 땐 <kbd>⌘\</kbd>, <kbd>⌘L</kbd>로 양쪽 패널을 접을 수 있어요. 자주 보는 자료는 ★로 즐겨찾기하고, 최근에 연 파일은 목록 상단에서 바로 찾아 열어요.</p>
+          <p>노트는 마크다운 문법이 실시간으로 렌더링되어 수식(<code>$x^2$</code>)이나 노트 링크(<code>[[개념]]</code>)도 자연스럽게 쓸 수 있어요.</p>
         </div>
         <div class="f-shot"><img src="screenshots/02-main.png" width="1440" height="900" loading="lazy" alt="과목 Hub 노트가 열린 SSAM 메인 화면"></div>
       </div>
 
       <div class="feature">
         <div class="f-text">
-          <h3>PDF에서 드래그해서 바로 물어요</h3>
-          <p>헷갈리는 문장을 드래그하면 <strong>튜터에게 묻기</strong> 버튼이 떠요. 선택한 구절과 그 페이지가 질문에 함께 붙어요.</p>
-          <p>스캔한 책도 글자를 인식해서 검색하고, 두꺼운 책은 목차 단위로 나눠 읽기 때문에 큰 파일을 열어도 화면이 멈추지 않아요. 구조식·그래프·회로도가 있는 쪽은 튜터가 그 쪽 그림을 직접 보고 설명해요.</p>
+          <h3>PDF에서 드래그해서 바로 물어보세요</h3>
+          <p>헷갈리는 문장을 드래그하면 <strong>튜터에게 묻기</strong> 버튼이 바로 떠요. 선택한 문장과 해당 페이지 번호가 질문에 자동으로 첨부돼요.</p>
+          <p>스캔한 전공 서적도 자체 OCR로 글자를 인식해 검색할 수 있고, 두꺼운 교재는 목차별로 나누어 읽어 큰 문서를 열어도 버벅대지 않아요. 화학 구조식이나 회로도, 그래프가 있는 페이지는 튜터가 그림을 직접 확인하며 설명해 줘요.</p>
         </div>
         <div class="f-shot"><img src="screenshots/04-pdf.png" width="1440" height="900" loading="lazy" alt="PDF 뷰어에서 문장을 선택하고 튜터에게 묻는 화면"></div>
       </div>
@@ -410,11 +410,11 @@ footer a { color: var(--muted); }
       <div class="feature">
         <div class="f-text">
           <h3>설명이 버거우면 🧠 인지부하 온다</h3>
-          <p>답 아래 버튼을 누르면 같은 내용을 한 줄 요약, 3~5개의 작은 단계, 정리 순서로 다시 설명해요.</p>
+          <p>답변 아래 버튼을 누르면 복잡한 내용을 핵심 한 줄 요약과 3~5개의 짧은 단계로 나누어 차근차근 다시 풀어 줘요.</p>
           <ul>
-            <li>단계는 하나씩 열리고, 단계마다 짧은 확인 질문이 있어요.</li>
-            <li>막힌 단계만 더 잘게 쪼갤 수 있어요.</li>
-            <li>답의 일부만 드래그해서 그 부분만 쪼개도 돼요.</li>
+            <li>단계는 순서대로 하나씩 열리고, 단계 끝마다 짧은 확인 질문으로 이해도를 짚고 넘어가요.</li>
+            <li>이해하기 어려운 단계는 '이 단계에서 막혀요'를 눌러 더 잘게 쪼갤 수 있어요.</li>
+            <li>답변 전체가 아니라 헷갈리는 특정 문단만 드래그해서 쪼개 달라고 해도 돼요.</li>
           </ul>
         </div>
         <div class="f-shot"><img src="screenshots/11-overload.png" width="1440" height="900" loading="lazy" alt="튜터 답을 단계별 카드로 나눠 보여 주는 인지부하 온다 화면"></div>
@@ -422,34 +422,34 @@ footer a { color: var(--muted); }
 
       <div class="feature solo">
         <div class="f-text">
-          <h3>📊 말보다 그림이 빠를 때</h3>
-          <p>답 아래 <strong>시각화</strong>를 누르면 AI가 그 설명을 파형·흐름도·슬라이더로 만져 보는 그림으로 그려요. 전력전자의 듀티비를 바꿔 가며 파형을 보는 식이에요.</p>
+          <h3>말보다 그림이 빠를 때</h3>
+          <p>답변 아래 <strong>시각화</strong>를 누르면 개념에 맞춰 직접 슬라이더를 조작해 보는 대화형 그래프나 흐름도를 만들어 줘요. 파형 주기나 저항값을 바꿔 가며 결과를 확인하는 식이에요.</p>
           <ul>
-            <li>"부하 저항도 슬라이더로"처럼 말로 고칠 수 있고, 이전 버전으로 돌아갈 수 있어요.</li>
-            <li>튜터가 그림이 도움 될 때 <strong>✨ 시각화로 보기</strong>를 권해요. 누를 때만 만들어요.</li>
-            <li>공부 폴더에 .html로 저장하면 인터넷 없이 앱 밖 브라우저에서도 열려요.</li>
+            <li>"저항값 슬라이더도 넣어줘"처럼 대화하듯 수정할 수 있고, 마음에 드는 이전 버전으로 언제든 되돌릴 수 있어요.</li>
+            <li>시각화가 도움 되는 주제라면 튜터가 먼저 <strong>시각화로 보기</strong> 버튼을 권해 줘요. 내가 눌렀을 때만 생성해요.</li>
+            <li>공부 폴더에 HTML 파일로 저장해 두면 웹 브라우저에서도 인터넷 연결 없이 언제든 열어볼 수 있어요.</li>
           </ul>
         </div>
       </div>
 
       <div class="feature solo">
         <div class="f-text">
-          <h3>내 속도, 내 범위로</h3>
-          <p>입력창 위에서 공부 방식을 골라요. <strong>꼼꼼히</strong>는 한 덩어리씩 확인하며, <strong>훑기</strong>는 큰 흐름을 한 번에, <strong>과제 풀이</strong>는 문제마다 풀이를 주고 다음 문제로 넘어가요. 이어서 공부할 때는 오늘 범위의 흐름과 지금 위치를 먼저 보여 줘요.</p>
+          <h3>내 공부 속도와 범위에 맞춰서</h3>
+          <p>입력창 위에서 공부 방식을 골라요. 한 덩어리씩 확인하는 <strong>꼼꼼히</strong>, 큰 흐름을 빠르게 보는 <strong>훑기</strong>, 풀이에 집중하는 <strong>과제 풀이</strong> 중 내 페이스에 맞는 방식을 선택해 보세요. 이어서 공부할 땐 오늘 다룰 범위의 전체 흐름과 현재 위치를 먼저 짚어 줘요.</p>
           <ul>
-            <li><strong>복습하자</strong>에서 범위(오늘 한 것·틀린 것만·과목 전체·직접 쓰기)를 고르거나 "3장 퀴즈 10개"처럼 말하면 문제를 한꺼번에 내고, 답을 모아 보내면 한 번에 채점해요.</li>
-            <li>"앞으로 용어는 영어로"처럼 말하면 그대로 따르고, 버튼 한 번으로 <strong>나의 맥락</strong>에 저장해 다음 대화에도 이어져요.</li>
-            <li>설정 › 화면에서 튜터 글씨 크기를 바꿀 수 있어요.</li>
+            <li><strong>복습하자</strong> 버튼으로 범위를 고르거나 "3장 내용으로 퀴즈 5개 내줘"처럼 요청하면 문제를 모아서 내주고, 내가 적은 답안을 한 번에 채점해 줘요.</li>
+            <li>"용어는 원어로 설명해줘"처럼 공부 선호도를 말하면 튜터가 기억하고, 버튼 한 번으로 <strong>나의 맥락</strong>에 저장해 다음 대화에도 이어가요.</li>
+            <li>설정 → 화면 메뉴에서 튜터 글씨 크기를 읽기 편한 크기로 조절할 수 있어요.</li>
           </ul>
         </div>
       </div>
 
       <div class="feature">
         <div class="f-text">
-          <h3>마칠 때는 기록 카드</h3>
-          <p><strong>오늘은 여기까지</strong>를 누르면 오늘 배운 개념, 아직 헷갈리는 것, 맞힌 문제와 틀린 문제, 다음 시작점이 카드로 떠요.</p>
-          <p>저장할 노트를 미리보기로 확인하고 직접 고칠 수 있어요. 판정이 틀렸으면 눌러서 바꾸면 기록을 다시 만들어요.</p>
-          <p>노트는 대화 기록이 아니라 혼자 다시 읽는 교재처럼 고쳐 써져요. 틀린 건 <strong>자주 틀리는 것</strong>에 모이고, 다시 볼 것에는 다음 복습일이 붙어요.</p>
+          <h3>공부를 마칠 땐 기록 카드</h3>
+          <p><strong>오늘은 여기까지</strong>를 누르면 오늘 배운 개념, 헷갈린 내용, 맞힌 문제와 틀린 문제, 다음 공부 시작점을 한 장의 카드로 정리해 줘요.</p>
+          <p>노트에 어떻게 반영될지 미리 확인하고 내용을 직접 고칠 수 있어요. 튜터의 정답 판정이 잘못됐다면 클릭해서 바로 수정할 수 있어요.</p>
+          <p>노트는 단순 대화 복사본이 아니라 혼자 다시 복습할 수 있는 교재 형태로 다듬어져 저장돼요. 오답은 <strong>자주 틀리는 것</strong>에 모이고, 다시 볼 항목에는 알맞은 복습 일정이 자동으로 잡혀요.</p>
         </div>
         <div class="f-shot"><img src="screenshots/06-proposal.png" width="1440" height="900" loading="lazy" alt="오늘 배운 개념과 다음 시작점이 정리된 기록 카드"></div>
       </div>
@@ -457,16 +457,16 @@ footer a { color: var(--muted); }
 
     <div class="mini-grid">
       <div class="mini">
-        <h4>자료는 넣기만 하면 정리</h4>
-        <p>PDF·슬라이드를 끌어다 놓으면 검색할 수 있게 읽고 스터디 노트까지 만들어 둬요. 마음에 안 들면 되돌리기 한 번이면 돼요.</p>
+        <h4>자료는 넣기만 하면 자동 정리</h4>
+        <p>PDF나 슬라이드를 끌어다 놓으면 내용을 읽어 검색 색인을 만들고 요약 노트까지 준비해 둬요. 마음에 들지 않으면 언제든 되돌릴 수 있어요.</p>
       </div>
       <div class="mini">
         <h4>쓰던 공부 폴더 그대로</h4>
-        <p>과목별로 정리해 둔 폴더를 열면 복사나 이동 없이 과목으로 연결해요. 원래 폴더에 파일을 넣으면 앱에도 바로 보여요.</p>
+        <p>과목별로 정리해 둔 기존 폴더를 그대로 연결할 수 있어요. 파일을 옮기거나 복사할 필요 없이, 평소 쓰던 폴더에 새 자료를 넣으면 앱에도 즉시 반영돼요.</p>
       </div>
       <div class="mini">
-        <h4>답을 채점해 줘요</h4>
-        <p>내 답을 보여 주면 맞음 · 부분 정답 · 틀림을 먼저 밝히고, 맞은 부분과 틀린 부분을 이유와 함께 나눠 설명해요.</p>
+        <h4>문제 풀이 채점</h4>
+        <p>직접 푼 풀이를 적어 보내면 맞음, 부분 정답, 틀림으로 구분해 채점하고, 어느 부분이 맞았고 어디서 왜 틀렸는지 이유와 함께 설명해 줘요.</p>
       </div>
     </div>
   </div>
@@ -477,7 +477,7 @@ footer a { color: var(--muted); }
   <div class="wrap">
     <p class="eyebrow">설치</p>
     <h2 class="sec-title">3분이면 설치해요</h2>
-    <p class="sec-lead">아직 정식 서명을 받지 않은 앱이라 처음 한 번은 운영체제가 경고를 띄워요. 앱이 깨진 게 아니니 아래 순서대로 넘어가면 돼요.</p>
+    <p class="sec-lead">아직 별도 인증서 서명을 등록하지 않아 처음 한 번은 운영체제 보안 경고가 떠요. 파일 문제가 아니니 아래 순서대로 실행해 주세요.</p>
 
     <div class="tabs" role="tablist" aria-label="운영체제">
       <button class="tab" role="tab" id="tab-mac" aria-controls="panel-mac" aria-selected="true">맥</button>
@@ -488,19 +488,19 @@ footer a { color: var(--muted); }
     <div class="panel" role="tabpanel" id="panel-mac" aria-labelledby="tab-mac">
       <ol class="steps" data-mac-dmg hidden>
         <li class="step"><div class="step-body">
-          <h3>dmg 파일 받기</h3>
-          <p>보통 <strong>다운로드</strong> 폴더에 저장돼요.</p>
+          <h3>dmg 파일 내려받기</h3>
+          <p>맥에 맞는 최신 dmg 설치 파일을 내려받아요. 보통 <strong>다운로드</strong> 폴더에 저장돼요.</p>
           <div><a class="btn btn-ghost" data-dl="macdmg" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span data-dl-label>맥용 dmg 받기</span></a></div>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>열고, 응용 프로그램으로 끌어다 놓기</h3>
-          <p>받은 dmg를 더블클릭하면 창이 열려요. 왼쪽의 <strong>SSAM</strong>을 오른쪽 <strong>Applications</strong> 폴더로 끌어다 놓아요. 이미 있으면 <strong>대치</strong>를 눌러요. 공부 폴더와 설정은 그대로 남아요.</p>
+          <p>내려받은 dmg 파일을 열고, <strong>SSAM</strong> 아이콘을 오른쪽 <strong>Applications</strong>(응용 프로그램) 폴더로 끌어다 놓으세요. 기존 버전이 있다면 <strong>대치</strong>를 선택하면 돼요. 공부 폴더와 설정은 안전하게 유지돼요.</p>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>처음 열 때 "열지 않음" 창이 뜨면 완료</h3>
-          <p>응용 프로그램에서 SSAM을 열면 처음 한 번은 아래 창이 떠요. Apple 인증을 받지 않은 앱이라 뜨는 경고예요. <strong>휴지통으로 이동</strong>이 아니라 <strong>완료</strong>를 눌러요.</p>
+          <p>응용 프로그램 폴더에서 SSAM을 처음 실행하면 아래와 같은 보안 안내 창이 떠요. Apple 인증이 없어 뜨는 알림이니 <strong>휴지통으로 이동</strong> 대신 <strong>완료</strong>를 누르고 창을 닫아 주세요.</p>
           <div>
             <div class="mock mock-mac" role="img" aria-label="macOS 경고창 예시: SSAM을(를) 열지 않음. 완료를 누르세요">
               <div class="ic"></div>
@@ -509,45 +509,45 @@ footer a { color: var(--muted); }
               <span class="b">휴지통으로 이동</span>
               <span class="b pick">완료</span>
             </div>
-            <p class="mock-cap">노란 점선을 눌러요. 그림은 예시라 실제 창과 조금 다를 수 있어요.</p>
+            <p class="mock-cap">노란 점선으로 표시된 완료 버튼을 눌러 창을 닫으세요. 실제 창과 문구가 조금 다를 수 있어요.</p>
           </div>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>설정에서 그래도 열기</h3>
-          <p><strong>시스템 설정 → 개인정보 보호 및 보안</strong>으로 가서 아래쪽 <strong>보안</strong> 항목까지 내려요. "'SSAM'이(가) 차단되었습니다" 옆의 <strong>그래도 열기</strong>를 누르고, 맥 암호나 Touch ID로 확인해요.</p>
+          <p>맥 <strong>시스템 설정 → 개인정보 보호 및 보안</strong>으로 이동해 아래쪽 <strong>보안</strong> 섹션으로 스크롤을 내려요. "'SSAM'의 사용이 차단되었습니다" 옆의 <strong>그래도 열기</strong>를 누르고 암호나 Touch ID로 승인해 주세요.</p>
           <div>
             <div class="mock mock-set" role="img" aria-label="시스템 설정 예시: SSAM이 차단되었습니다 옆의 그래도 열기 버튼">
               <div class="h">보안</div>
               <div class="r"><span>'SSAM'이(가) Mac을 보호하기 위해 차단되었습니다.</span><span class="b pick">그래도 열기</span></div>
             </div>
-            <p class="mock-cap">그 뒤 SSAM을 다시 열고 <strong>열기</strong>를 누르면 끝이에요. 다음부터는 바로 열려요.</p>
+            <p class="mock-cap">승인 후 SSAM을 다시 실행하고 <strong>열기</strong>를 누르면 끝이에요. 다음부터는 경고 없이 바로 열려요.</p>
           </div>
         </div></li>
       </ol>
       <ol class="steps" data-mac-zip>
         <li class="step"><div class="step-body">
-          <h3>zip 파일 받기</h3>
-          <p>보통 <strong>다운로드</strong> 폴더에 저장돼요. 파일 이름의 숫자가 최신 버전인지 확인하세요. 예전 zip만 있으면 예전 버전이 설치돼요.</p>
+          <h3>zip 파일 내려받기</h3>
+          <p>맥용 최신 zip 압축 파일을 내려받아요. 보통 <strong>다운로드</strong> 폴더에 저장돼요. 파일 이름의 버전 번호를 확인해 주세요.</p>
           <div><a class="btn btn-ghost" data-dl="mac" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span data-dl-label>맥용 zip 받기</span></a></div>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>터미널에 한 줄 붙여넣기</h3>
-          <p><kbd>⌘</kbd>+<kbd>스페이스</kbd>로 <strong>터미널</strong>을 찾아 열고, 아래 명령을 복사해 붙여넣은 뒤 <kbd>Enter</kbd>를 눌러요. 가장 최근에 받은 zip을 풀고 Finder로 열어 줘요.</p>
+          <p><kbd>⌘</kbd>+<kbd>스페이스</kbd>로 <strong>터미널</strong>을 열고, 아래 명령어를 복사해 붙여넣은 뒤 <kbd>Enter</kbd>를 누르세요. 최근에 받은 압축 파일을 풀고 Finder 창으로 열어 줘요.</p>
           <div class="cmd">
             <pre id="mac-cmd">rm -rf ~/Downloads/SSAM-new &amp;&amp; ditto -x -k --noqtn "$(ls -t ~/Downloads/SSAM-mac-arm64-*.zip | head -1)" ~/Downloads/SSAM-new &amp;&amp; xattr -cr ~/Downloads/SSAM-new/SSAM.app &amp;&amp; open ~/Downloads/SSAM-new</pre>
             <button class="copy" type="button" data-copy="#mac-cmd">복사</button>
           </div>
-          <p class="tip">이 명령이 하는 일: 지난번에 푼 폴더를 지우고, zip을 <code>다운로드/SSAM-new</code>에 풀고, 인터넷에서 받은 파일 표시를 지워서 아래 경고가 뜨지 않게 해요.</p>
+          <p class="tip">이 명령어는 다운로드 격리 속성을 정리하고 임시 폴더(<code>SSAM-new</code>)에 풀어 손상 경고가 뜨지 않도록 처리해 줘요.</p>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>응용 프로그램 폴더로 끌어다 놓기</h3>
-          <p>열린 Finder 창의 <strong>SSAM.app</strong>을 왼쪽의 <strong>응용 프로그램</strong>으로 끌어다 놓아요. 이미 있으면 <strong>대치</strong>를 눌러요. 공부 폴더와 설정은 그대로 남아요.</p>
+          <p>새로 열린 Finder 창의 <strong>SSAM.app</strong>을 <strong>응용 프로그램</strong> 폴더로 끌어다 놓으세요. 기존 버전이 있다면 <strong>대치</strong>를 누르면 돼요. 노트와 설정은 그대로 유지돼요.</p>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>이런 창이 뜨면</h3>
-          <p>2단계 명령을 건너뛰고 zip을 바로 풀었을 때 나와요. 앱이 깨진 게 아니라 서명 없는 앱의 다운로드 표시 때문이에요. <strong>휴지통으로 이동</strong>을 누르지 말고 창을 닫은 뒤 2단계 명령을 실행하세요.</p>
+          <p>2단계 터미널 명령을 건너뛰고 압축을 직접 풀었을 때 나타날 수 있어요. 앱 파일 손상이 아니라 다운로드 보안 표식 때문이니, <strong>휴지통으로 이동</strong>을 누르지 말고 창을 닫은 뒤 2단계 명령어를 실행해 주세요.</p>
           <div>
             <div class="mock mock-mac" role="img" aria-label="macOS 경고창 예시: SSAM은(는) 손상되었기 때문에 열 수 없습니다">
               <div class="ic"></div>
@@ -560,22 +560,22 @@ footer a { color: var(--muted); }
           </div>
         </div></li>
       </ol>
-      <p class="req">Apple Silicon(M1 이후) 맥에서 동작해요. 다음 버전부터는 앱 안의 <strong>업데이트</strong> 버튼으로 바로 바꿀 수 있어요. macOS가 막으면 앱이 Finder를 열어 끌어다 놓을 수 있게 준비해 줘요.</p>
+      <p class="req">Apple Silicon(M1 이상) 맥을 지원해요. 다음 업데이트부터는 앱 안의 <strong>업데이트</strong> 버튼으로 바로 새 버전을 적용할 수 있어요. macOS가 자동 교체를 막으면 앱이 Finder 창을 열어 끌어다 놓을 수 있게 도와줘요.</p>
     </div>
 
     <!-- 윈도우 -->
     <div class="panel" role="tabpanel" id="panel-win" aria-labelledby="tab-win" hidden>
       <ol class="steps">
         <li class="step"><div class="step-body">
-          <h3>설치 파일 받기</h3>
-          <p><code>SSAM-Setup-버전.exe</code>를 받아요.</p>
+          <h3>설치 파일 내려받기</h3>
+          <p>윈도우용 최신 설치 파일(<code>SSAM-Setup-*.exe</code>)을 내려받아요.</p>
           <div><a class="btn btn-ghost" data-dl="win" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span data-dl-label>윈도우 설치 파일 받기</span></a></div>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>실행하고, 파란 창이 뜨면 추가 정보 → 실행</h3>
-          <p>정식 서명을 하지 않은 앱이라 <strong>Windows의 PC 보호</strong> 창이 떠요. <strong>추가 정보</strong>를 누르면 아래에 <strong>실행</strong> 버튼이 생겨요.</p>
+          <p>코드 서명 인증서가 없어 <strong>Windows의 PC 보호</strong> 화면이 떠요. <strong>추가 정보</strong> 링크를 누르면 아래에 <strong>실행</strong> 버튼이 나타나요.</p>
           <div>
             <div class="mock mock-win" role="img" aria-label="Windows PC 보호 창 예시: 추가 정보를 누른 뒤 실행을 누르세요">
               <div class="t">Windows의 PC 보호</div>
@@ -583,15 +583,15 @@ footer a { color: var(--muted); }
               <span class="more">추가 정보</span>
               <div class="row"><span class="b run">실행</span><span class="b">실행 안 함</span></div>
             </div>
-            <p class="mock-cap">노란 점선 두 곳을 차례로 눌러요. 그림은 예시라 실제 창과 조금 다를 수 있어요.</p>
+            <p class="mock-cap">노란 점선으로 표시된 두 곳을 차례로 누르세요. 실제 화면과 조금 다를 수 있어요.</p>
           </div>
         </div></li>
         <li class="step"><div class="step-body">
           <h3>설치가 끝나면 SSAM이 열려요</h3>
-          <p>시작 메뉴와 바탕 화면에도 SSAM이 생겨요. 이후 업데이트는 앱이 알아서 받아 두고, 재시작하면 적용돼요.</p>
+          <p>설치가 완료되면 앱이 바로 실행돼요. 시작 메뉴와 바탕 화면에 바로가기가 생성되며, 이후 업데이트는 앱 실행 시 자동으로 내려받아 적용돼요.</p>
         </div></li>
       </ol>
-      <p class="req">Windows 10/11 64비트에서 동작해요.</p>
+      <p class="req">Windows 10/11 (64비트) 환경을 지원해요.</p>
     </div>
   </div>
 </section>
@@ -601,17 +601,17 @@ footer a { color: var(--muted); }
   <div class="wrap">
     <p class="eyebrow">사용법</p>
     <h2 class="sec-title">공부 한 번은 네 단계면 돼요</h2>
-    <p class="sec-lead">앱 안의 <strong>처음 해 볼 것</strong> 목록에도 같은 순서가 있고, 해 보면 저절로 체크돼요.</p>
+    <p class="sec-lead">앱 안의 <strong>처음 해 볼 것</strong> 목록을 따라 순서대로 진행해 볼 수 있어요.</p>
 
     <div class="flow">
-      <div class="flow-item"><span class="n">1</span><h3>강의자료 열기</h3><p>왼쪽에서 PDF를 누르거나 파일을 끌어다 놓아 추가해요.</p></div>
-      <div class="flow-item"><span class="n">2</span><h3>튜터에게 물어보기</h3><p>궁금한 걸 그냥 써요. 튜터는 전에 정리한 노트와 엮어서 설명하고, 답을 쓰는 동안 지금 무엇을 하는지 한 줄로 보여 줘요. 답의 <span class="src">p.4</span> 같은 출처를 누르면 그 페이지가 열려요.</p></div>
-      <div class="flow-item"><span class="n">3</span><h3>어려우면 🧠</h3><p>답 아래 <strong>인지부하 온다</strong>를 누르면 작은 단계로 쪼개서 다시 설명해요.</p></div>
-      <div class="flow-item"><span class="n">4</span><h3>오늘은 여기까지</h3><p>기록 카드를 확인하고 저장하면, 다음엔 <strong>이어서 공부하기</strong>로 거기서 시작해요.</p></div>
+      <div class="flow-item"><span class="n">1</span><h3>강의자료 열기</h3><p>왼쪽 탐색기에서 PDF를 누르거나 새 파일을 끌어다 놓아 추가해요.</p></div>
+      <div class="flow-item"><span class="n">2</span><h3>튜터에게 물어보기</h3><p>궁금한 점을 편하게 질문하세요. 튜터가 정리해 둔 노트와 강의자료를 살펴보고 답변해 줘요. 답변 속 <span class="src">p.4</span> 출처를 누르면 해당 페이지가 바로 열려요.</p></div>
+      <div class="flow-item"><span class="n">3</span><h3>어려우면 🧠</h3><p>답변 아래 <strong>인지부하 온다</strong>를 누르면 작은 단계로 나누어 차근차근 다시 설명해요.</p></div>
+      <div class="flow-item"><span class="n">4</span><h3>오늘은 여기까지</h3><p>학습 기록 카드를 확인하고 저장하면, 다음엔 <strong>이어서 공부하기</strong>로 곧바로 시작해요.</p></div>
     </div>
 
     <h3 class="sub-title" id="tutorial">직접 눌러 보며 따라 해 보기</h3>
-    <p class="sec-lead">실제 SSAM 화면이에요. 표시된 곳을 누르면 다음 단계로 넘어가요. 화면 속 튜터 답은 연습용 튜터의 답이에요.</p>
+    <p class="sec-lead">실제 SSAM 화면이에요. 표시된 버튼을 누르면 다음 단계로 넘어가요. 화면 속 답변은 연습용 튜터의 예시예요.</p>
     <div class="tour" data-tour>
       <div class="stage">
         <img data-tour-img src="tour/01-welcome.png" width="1440" height="900" alt="">
@@ -631,7 +631,7 @@ footer a { color: var(--muted); }
     </div>
 
     <h3 class="sub-title">화면의 버튼 한눈에 보기</h3>
-    <p class="sec-lead">번호를 누르면 그 버튼이 하는 일을 보여 줘요.</p>
+    <p class="sec-lead">번호를 누르면 각 버튼이 하는 일을 자세히 볼 수 있어요.</p>
     <div class="legend" data-legend>
       <div class="stage">
         <img src="tour/buttons.png" width="1440" height="900" loading="lazy" alt="SSAM 메인 화면과 주요 버튼 위치">
@@ -654,28 +654,28 @@ footer a { color: var(--muted); }
   <div class="wrap">
     <p class="eyebrow">AI 연결</p>
     <h2 class="sec-title">이미 쓰는 AI를 연결해요</h2>
-    <p class="sec-lead">설정(<kbd>⌘,</kbd>) → <strong>AI 연결</strong>에서 골라요. 질문할 때는 폴더 전체가 아니라 그 질문에 필요한 부분만 내가 고른 AI로 보내요.</p>
+    <p class="sec-lead">설정(<kbd>⌘,</kbd>) → <strong>AI 연결</strong>에서 원하는 방식을 골라요. 질문할 때도 폴더 전체가 아니라 그 질문에 꼭 필요한 내용만 내가 연결한 AI로 전달돼요.</p>
 
     <div class="ai-grid">
       <div class="ai rec">
         <span class="tag">추천</span>
         <h3>ChatGPT Plus/Pro</h3>
-        <p><strong>ChatGPT로 로그인</strong>을 누르고 브라우저에서 승인하면 끝이에요. API 키가 필요 없어요.</p>
+        <p><strong>ChatGPT로 로그인</strong>을 누르고 브라우저에서 연동만 승인하면 돼요. 복잡한 API 키 발급이 필요 없어요.</p>
       </div>
       <div class="ai">
         <span class="tag plain">Claude 구독</span>
         <h3>Claude Code</h3>
-        <p>Claude Pro/Max 사용량을 써요. 설정의 Claude Code 카드가 설치와 로그인 창을 차례로 열어 줘요.</p>
+        <p>Claude Pro/Max 사용량을 그대로 써요. 설정 화면의 안내에 따라 간편하게 설치하고 로그인할 수 있어요.</p>
       </div>
       <div class="ai">
         <span class="tag plain">개발자용</span>
         <h3>Codex CLI</h3>
-        <p>터미널에서 <code>codex login</code>을 해 둔 컴퓨터라면 그대로 연결돼요.</p>
+        <p>터미널에서 <code>codex login</code> 인증을 마친 환경이라면 추가 설정 없이 곧바로 연결돼요.</p>
       </div>
       <div class="ai">
         <span class="tag plain">인터넷 없이</span>
         <h3>연습용 튜터</h3>
-        <p>AI 없이 화면과 흐름만 익히는 용도예요. 답은 정해진 패턴으로 나와요.</p>
+        <p>외부 AI 연결 없이도 앱의 화면과 공부 흐름을 미리 둘러볼 수 있는 체험 모드예요.</p>
       </div>
     </div>
     <div class="ai-shot"><img src="screenshots/07-settings-ai.png" width="1440" height="900" loading="lazy" alt="설정의 AI 연결 탭"></div>
@@ -687,8 +687,8 @@ footer a { color: var(--muted); }
   <div class="wrap">
     <div class="story">
       <h2 class="sec-title">왜 만들었나요?</h2>
-      <p>챗봇에게 물어보면 설명은 잘해 주는데, 다음 날이면 어디까지 했는지, 뭘 틀렸는지가 대화 속에 묻혀 버렸어요. 내 강의자료를 근거로 답하고, 공부한 흔적이 내 노트로 쌓이는 튜터가 있으면 좋겠다고 생각해서 만들었어요.</p>
-      <p>그리고 내 GPT 구독 그대로 작동하는 공부 앱이 없어서 만들었어요.</p>
+      <p>챗봇에게 물어보면 설명은 꽤 잘해 주는데, 다음 날이 되면 어디까지 공부했는지, 어떤 문제를 틀렸는지가 대화창 속에 그냥 묻혀 버리곤 했어요. 내가 보는 강의자료를 토대로 설명해 주고, 공부한 흔적이 내 컴퓨터 속 정리된 노트로 차곡차곡 쌓이는 튜터가 있었으면 해서 직접 만들었어요.</p>
+      <p>기존에 이미 결제해 쓰던 ChatGPT나 Claude 구독을 그대로 활용할 수 있는 공부 앱이 없었다는 점도 한몫했고요.</p>
       <p class="sign">SSAM 개발자</p>
     </div>
   </div>
@@ -701,55 +701,55 @@ footer a { color: var(--muted); }
     <h2 class="sec-title">막히면 여기부터 보세요</h2>
     <div class="faq">
       <details>
-        <summary>돈이 드나요?</summary>
-        <div class="a"><p>앱은 무료예요. AI 답변은 내가 연결한 ChatGPT·Claude 구독의 사용량을 써요. 많이 물어보면 구독의 시간당·주간 한도에 닿을 수 있고, 남은 양은 설정 → 사용량에서 볼 수 있어요.</p></div>
+        <summary>이용 요금이 있나요?</summary>
+        <div class="a"><p>SSAM 앱 자체는 무료예요. AI 질문 답변은 내가 연결한 ChatGPT나 Claude 구독 플랜의 사용량을 써요. 질문이 많아지면 해당 서비스의 질문 횟수 제한(시간당·주간 한도)에 닿을 수 있고, 남은 사용량은 설정 → 사용량 화면에서 확인할 수 있어요.</p></div>
       </details>
       <details>
-        <summary>어떤 컴퓨터에서 되나요?</summary>
-        <div class="a"><p>Apple Silicon(M1 이후) 맥과 64비트 Windows 10/11이에요. 인텔 맥, 리눅스, 휴대폰은 아직 지원하지 않아요.</p></div>
+        <summary>어떤 운영체제를 지원하나요?</summary>
+        <div class="a"><p>Apple Silicon(M1 이상) 맥과 64비트 Windows 10/11을 지원해요. 인텔 맥과 리눅스, 모바일 환경은 아직 지원하지 않아요.</p></div>
       </details>
       <details>
         <summary>맥에서 "손상되었기 때문에 열 수 없습니다"가 떠요</summary>
         <div class="a">
-          <p>앱이 깨진 게 아니에요. 예전 버전(0.1.20까지)은 설치 파일을 복사하는 과정에서 맥이 앱을 '손상됨'으로 잘못 판단했어요. <strong>휴지통으로 이동</strong>을 누르지 말고 <strong>취소</strong>를 누르세요.</p>
-          <p>위의 최신 dmg를 다시 받아 설치하면 이 창 대신 "확인할 수 없습니다" 창이 뜨고, 아래 방법으로 허용할 수 있어요.</p>
-          <p>예전 버전을 그대로 열려면 <kbd>⌘</kbd>+<kbd>스페이스</kbd>로 <strong>터미널</strong>을 열고 <code>xattr -cr /Applications/SSAM.app</code>을 붙여넣은 뒤 <kbd>Enter</kbd>를 누르고 다시 열어요.</p>
+          <p>앱 파일이 실제로 깨진 게 아니에요. 예전 버전(0.1.20 이전)은 설치 파일을 복사할 때 맥이 앱을 '손상됨'으로 잘못 인식하는 경우가 있었어요. <strong>휴지통으로 이동</strong>을 누르지 말고 <strong>취소</strong>를 누르세요.</p>
+          <p>상단의 최신 dmg 파일을 받아 설치하면 이 경고 없이 정상 실행할 수 있어요.</p>
+          <p>예전 설치본을 그대로 열고 싶다면 <kbd>⌘</kbd>+<kbd>스페이스</kbd>로 <strong>터미널</strong>을 열고 <code>xattr -cr /Applications/SSAM.app</code>을 붙여넣은 뒤 <kbd>Enter</kbd>를 누르고 다시 열어 보세요.</p>
         </div>
       </details>
       <details>
         <summary>맥에서 "확인할 수 없습니다"라며 앱이 안 열려요</summary>
         <div class="a">
-          <p>"Apple은 'SSAM'에 악성 코드가 없음을 확인할 수 없습니다" 같은 창이 뜨면 <strong>완료</strong>(또는 확인)를 눌러 닫고 아래 순서로 허용해요.</p>
-          <p>1. 시스템 설정 → <strong>개인정보 보호 및 보안</strong>으로 가요.<br>2. 아래쪽 보안 항목의 "'SSAM'이(가) 차단되었습니다" 옆 <strong>그래도 열기</strong>를 눌러요.<br>3. 맥 암호나 Touch ID로 확인하고, SSAM을 다시 열어 <strong>열기</strong>를 눌러요.</p>
-          <p>한 번 허용하면 다음부터는 바로 열려요.</p>
+          <p>"Apple은 'SSAM'에 악성 코드가 없음을 확인할 수 없습니다" 알림이 뜨면 <strong>완료</strong>(또는 확인)를 눌러 닫고 아래 순서대로 실행해 주세요.</p>
+          <p>1. 시스템 설정 → <strong>개인정보 보호 및 보안</strong>으로 가요.<br>2. 아래쪽 보안 항목의 "'SSAM'의 사용이 차단되었습니다" 옆 <strong>그래도 열기</strong>를 눌러요.<br>3. 맥 암호나 Touch ID로 확인하고, SSAM을 다시 열어 <strong>열기</strong>를 눌러요.</p>
+          <p>한 번 허용해 두면 다음부터는 경고 없이 바로 열려요.</p>
         </div>
       </details>
       <details>
         <summary>윈도우에서 파란 "PC 보호" 창이 떠요</summary>
-        <div class="a"><p><strong>추가 정보</strong>를 누르면 <strong>실행</strong> 버튼이 나와요. 정식 코드 서명을 하지 않은 앱이라 처음 한 번 뜨는 경고예요.</p></div>
+        <div class="a"><p>창 안의 <strong>추가 정보</strong> 링크를 누르면 <strong>실행</strong> 버튼이 나타나요. 코드 서명 인증서가 등록되지 않은 앱이라 처음 한 번 뜨는 기본 보안 알림이에요.</p></div>
       </details>
       <details>
         <summary>튜터 위의 연결 점이 빨간색이에요</summary>
-        <div class="a"><p>AI 연결이 끊겼거나 다시 로그인해야 하는 상태예요. 설정(<kbd>⌘,</kbd>) → AI 연결에서 다시 로그인하세요. 학교·회사 ChatGPT 계정은 관리자가 외부 앱 로그인을 막아 둘 수 있으니 개인 Plus/Pro 계정으로 로그인해 보세요.</p></div>
+        <div class="a"><p>AI 연결 세션이 끊겼거나 다시 로그인이 필요한 상태예요. 설정(<kbd>⌘,</kbd>) → AI 연결에서 다시 로그인해 보세요. 학교나 회사 계정은 관리자가 외부 앱 연동을 막아 두었을 수 있으니 개인 Plus/Pro 계정 로그인을 권장해요.</p></div>
       </details>
       <details>
-        <summary>스캔한 PDF도 읽나요?</summary>
-        <div class="a"><p>네. 글자를 선택할 수 없는 스캔본은 앱이 글자를 인식해서 읽어요. 처음 한 번은 시간이 걸리고, 두꺼운 책은 목차 단위로 나눠 차례로 채워져요. 그동안에도 다른 공부는 할 수 있어요.</p></div>
+        <summary>스캔한 PDF도 인식하나요?</summary>
+        <div class="a"><p>네. 글자가 선택되지 않는 스캔본도 앱 내 OCR 기능이 글자를 인식해 읽어 줘요. 처음 한 번은 색인 시간이 조금 걸릴 수 있지만, 두꺼운 책은 목차별로 나누어 차례로 채워지므로 처리 중에도 다른 공부를 바로 할 수 있어요.</p></div>
       </details>
       <details>
         <summary>내 자료가 어디로 보내지나요?</summary>
         <div class="a">
-          <p>노트와 자료는 내 컴퓨터의 공부 폴더에만 있어요. 질문할 때는 그 질문에 필요한 부분(과목의 지금 위치, 열린 노트, PDF 해당 페이지, 선택한 글)만 내가 연결한 AI로 보내요. 질문 위의 작은 칩이 이번에 보낸 자료예요.</p>
-          <p>오류가 나도 이 컴퓨터에 기록만 남기고 자동으로 보내지 않아요.</p>
+          <p>노트와 자료는 내 컴퓨터 공부 폴더에만 안전하게 저장돼요. 질문할 때도 폴더 전체가 아니라, 답변에 필요한 최소한의 맥락(과목 진도, 열린 노트, 해당 PDF 페이지 문단)만 내가 연결한 AI로 전달돼요. 질문 위에 뜨는 작은 칩으로 어떤 자료가 쓰였는지 확인할 수 있어요.</p>
+          <p>오류 로그 역시 내 컴퓨터 로컬 파일에만 남고 외부로 자동 전송되지 않아요.</p>
         </div>
       </details>
       <details>
         <summary>앱을 지우면 노트도 사라지나요?</summary>
-        <div class="a"><p>아니요. 공부 폴더의 <code>.md</code> 파일은 그대로 남아요. 다른 마크다운 편집기로도 열 수 있어요.</p></div>
+        <div class="a"><p>아니요. 공부 폴더 안의 <code>.md</code> 파일은 온전히 그대로 남아요. Obsidian이나 VS Code 등 다른 마크다운 편집기로도 언제든 열어볼 수 있어요.</p></div>
       </details>
       <details>
         <summary>업데이트는 어떻게 하나요?</summary>
-        <div class="a"><p>새 버전이 나오면 앱 위쪽에 알림이 떠요. <strong>업데이트</strong>를 누르고 재시작하면 바뀌어요. 맥에서 macOS가 교체를 막으면 앱이 Finder를 열어 주니, 새 SSAM을 응용 프로그램으로 끌어다 놓고 <strong>대치</strong>를 누르세요.</p></div>
+        <div class="a"><p>새 버전이 나오면 앱 상단에 업데이트 알림이 떠요. <strong>업데이트</strong>를 누르고 앱을 재시작하면 바로 적용돼요. 맥에서 권한 문제로 교체가 막히면 앱이 Finder를 열어 주니, 새 SSAM을 응용 프로그램 폴더로 끌어다 놓고 <strong>대치</strong>를 누르면 돼요.</p></div>
       </details>
     </div>
   </div>
@@ -762,7 +762,7 @@ footer a { color: var(--muted); }
     <h2 class="sec-title">불편한 점, 버그, 바라는 기능을 알려 주세요</h2>
     <div class="feedback">
       <div class="mailbox">
-        <p>메일로 보내 주세요. 캡처를 붙여 주면 더 빨리 고칠 수 있어요.</p>
+        <p>이메일로 편하게 남겨 주세요. 문제가 생긴 화면 캡처를 함께 보내주시면 원인을 파악하는 데 큰 도움이 돼요.</p>
         <div class="addr">
           <code id="mail">westdh@unist.ac.kr</code>
           <button class="copy" type="button" data-copy="#mail">주소 복사</button>
@@ -770,9 +770,9 @@ footer a { color: var(--muted); }
         <div><a class="btn btn-ghost" href="mailto:westdh@unist.ac.kr?subject=%5BSSAM%20%EC%9D%98%EA%B2%AC%5D">메일 앱으로 쓰기</a></div>
       </div>
       <ul>
-        <li>앱 안에서는 설정(<kbd>⌘,</kbd>) → <strong>정보·의견</strong>에서 앱 버전과 운영체제가 미리 적힌 메일을 쓸 수 있어요.</li>
-        <li>공부 폴더의 노트·자료·대화는 자동으로 붙지 않아요. 보낼 내용은 직접 확인해요.</li>
-        <li>오류가 났다면 같은 화면의 <strong>오류 기록 폴더 열기</strong>로 파일을 확인하고, 괜찮을 때만 붙여 주세요.</li>
+        <li>앱 안의 설정(<kbd>⌘,</kbd>) → <strong>정보·의견</strong> 메뉴에서 앱 버전과 운영체제가 미리 채워진 메일을 바로 쓸 수 있어요.</li>
+        <li>공부 폴더의 노트와 자료, 대화 내용은 메일에 자동으로 첨부되지 않으니 안심하세요.</li>
+        <li>오류가 났을 때는 같은 화면의 <strong>오류 기록 폴더 열기</strong>에서 로그를 확인하고, 공유해도 괜찮은 내용일 때만 첨부해 주세요.</li>
       </ul>
     </div>
   </div>
@@ -781,8 +781,8 @@ footer a { color: var(--muted); }
 <!-- 마지막 다운로드 -->
 <section class="final">
   <div class="wrap">
-    <h2>오늘 공부할 PDF 하나로 시작해 보세요</h2>
-    <p>예시 과목으로 둘러보는 데 5분이면 충분해요.</p>
+    <h2>오늘 공부할 강의자료 하나로 가볍게 시작해 보세요</h2>
+    <p>예시 과목 둘러보기로 5분 만에 사용법을 익힐 수 있어요.</p>
     <div class="dl-row">
       <a class="btn btn-primary" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -870,8 +870,8 @@ footer a { color: var(--muted); }
     if (note && !target) {
       note.hidden = false;
       note.textContent = os === 'mobile'
-        ? 'SSAM은 컴퓨터용 앱이에요. 맥이나 윈도우 컴퓨터에서 이 페이지를 열어 주세요.'
-        : '지금은 Apple Silicon 맥과 64비트 윈도우만 지원해요.';
+        ? 'SSAM은 데스크톱 전용 앱이에요. 맥이나 윈도우 컴퓨터에서 이 페이지를 열어 주세요.'
+        : '현재 Apple Silicon 맥과 64비트 윈도우 환경만 지원하고 있어요.';
     }
   }
 
@@ -904,51 +904,51 @@ footer a { color: var(--muted); }
   // 따라 해 보기: tour/tour.json 은 tests/e2e/site-tour.spec.ts 가 캡처하면서 버튼 위치를 적어 둔 것
   var TOUR = [
     { id: '01-welcome', title: '첫 화면에서 시작 방법 고르기',
-      body: '처음이면 예시 과목으로 둘러보는 걸 추천해요. 미적분 노트와 강의 PDF, 지난 공부 기록이 든 공부 폴더가 만들어져요. 내 과목은 나중에 "처음 시작할게"나 "기존 공부 폴더 열기"로 만들면 돼요.',
-      action: '예시 과목으로 둘러보기를 눌러요.' },
+      body: '처음 써보신다면 예시 과목으로 둘러보기를 추천해요. 미적분학 노트와 강의 PDF, 이전 공부 기록이 담긴 샘플 폴더가 자동으로 생성돼요. 내 과목은 나중에 언제든 새로 만들거나 연결할 수 있어요.',
+      action: '예시 과목으로 둘러보기를 눌러보세요.' },
     { id: '02-open', title: '강의자료 열기',
-      body: '왼쪽 목록의 강의자료에 PDF가 있어요. 🔒 표시는 원본을 실수로 고치지 않게 보호한다는 뜻이에요. 내 PDF는 + 자료 추가를 누르거나 목록으로 끌어다 놓으면 들어가요.',
-      action: '강의노트 PDF를 눌러 열어요.' },
+      body: '왼쪽 목록의 강의자료에서 PDF를 확인하세요. 🔒 표시는 원본 파일이 실수로 바뀌지 않도록 보호한다는 뜻이에요. 새 강의자료는 + 자료 추가를 누르거나 목록으로 끌어다 놓으면 들어가요.',
+      action: '강의노트 PDF를 눌러 열어보세요.' },
     { id: '03-continue', title: '이어서 공부하기',
-      body: '튜터 입력창 위의 버튼들은 자주 하는 요청을 한 번에 보내는 숏컷이에요. 이어서 공부하기는 과목 Hub에 적힌 다음 시작점을 읽고 거기서 시작해요.',
-      action: '이어서 공부하기를 눌러요.' },
-    { id: '04-ask', title: '궁금한 걸 그냥 물어보기',
-      body: '튜터는 지난번에 한 것과 오늘 시작점을 짚어 줬어요. 이제 궁금한 걸 그냥 쓰면 돼요. Enter로 보내고, 줄을 바꾸려면 Shift+Enter예요.',
-      action: '입력창에 "좌극한만 있으면 극한이 있는 거 아냐?"처럼 써 봐요.' },
+      body: '입력창 위의 버튼들은 자주 쓰는 요청을 한 번에 보내는 숏컷이에요. 이어서 공부하기를 누르면 과목 Hub에 적힌 다음 시작점을 읽고 거기서 바로 시작해요.',
+      action: '이어서 공부하기를 눌러보세요.' },
+    { id: '04-ask', title: '궁금한 점 편하게 물어보기',
+      body: '튜터가 이전 학습 내용과 오늘의 시작 위치를 짚어 줬어요. 이제 궁금하거나 이해되지 않는 내용을 편하게 물어보세요. Enter로 보내고, 줄바꿈은 Shift+Enter예요.',
+      action: '입력창에 "좌극한만 있으면 극한이 있는 거 아냐?"처럼 써 보세요.' },
     { id: '05-overload', title: '답 확인하고, 어려우면 🧠',
-      body: '답 위의 작은 칩은 이번 질문에 함께 보낸 자료예요. 답 속 "강의노트.pdf · p.2" 같은 출처를 누르면 그 페이지가 열려요. 설명이 버거우면 답 아래 버튼을 눌러요.',
-      action: '🧠 인지부하 온다를 눌러요.' },
+      body: '답변 위의 작은 칩은 이번 질문에 함께 보낸 자료예요. 본문 속 "강의노트.pdf · p.2" 같은 출처를 누르면 해당 페이지가 바로 열려요. 설명이 버겁다면 버튼을 눌러보세요.',
+      action: '🧠 인지부하 온다를 눌러보세요.' },
     { id: '06-steps', title: '한 단계씩 쪼개서 보기',
-      body: '같은 내용을 한 줄 요약과 작은 단계로 나눠 하나씩 보여 줘요. 단계마다 짧은 확인 질문이 있어요. 막히면 "N단계에서 막혀요"로 그 단계만 더 쪼갤 수 있어요.',
-      action: '이해했어, 다음을 눌러 다음 단계를 열어요.' },
+      body: '같은 내용을 한 줄 요약과 작은 단계로 나누어 하나씩 보여 줘요. 단계마다 짧은 확인 질문이 있어요. 막히는 단계는 한 번 더 잘게 쪼갤 수도 있어요.',
+      action: '이해했어, 다음을 눌러 다음 단계를 열어보세요.' },
     { id: '07-select', title: 'PDF에서 드래그해서 묻기',
-      body: 'PDF에서 헷갈리는 문장을 마우스로 드래그하면 버튼이 떠요. 선택한 글과 그 페이지가 질문에 붙어서, "이게 무슨 뜻이야?"만 써도 돼요.',
-      action: '튜터에게 묻기를 눌러요.' },
+      body: 'PDF 본문에서 헷갈리는 문장을 마우스로 드래그하면 버튼이 떠요. 선택한 문장과 페이지 정보가 질문에 자동으로 붙어서, 긴 설명 없이 바로 물어볼 수 있어요.',
+      action: '튜터에게 묻기를 눌러보세요.' },
     { id: '08-close', title: '마칠 때는 오늘은 여기까지',
-      body: '공부를 끝낼 때 누르면 튜터가 오늘 대화를 정리해서 기록 카드를 만들어요. 그냥 창을 닫으면 기록이 노트에 남지 않아요.',
-      action: '오늘은 여기까지를 눌러요.' },
+      body: '공부를 끝낼 때 버튼을 누르면 튜터가 오늘 나눈 대화를 정리해서 기록 카드를 만들어요. 그냥 창을 닫으면 공부 기록이 노트에 남지 않으니 꼭 눌러주세요.',
+      action: '오늘은 여기까지를 눌러보세요.' },
     { id: '09-save', title: '기록 카드 확인하고 저장',
-      body: '오늘 배운 개념, 헷갈리는 것, 맞힌 것과 틀린 것, 다음 시작점이 나와요. 노트마다 미리보기·변경·고치기로 확인할 수 있고, 판정이 틀렸으면 눌러서 바꿔요.',
+      body: '오늘 배운 개념, 헷갈린 내용, 맞힌 문제와 틀린 문제, 다음 시작점이 정리돼요. 노트에 저장되기 전 내용을 미리 확인하고 직접 고치거나 정답 판정을 수정할 수 있어요.',
       action: '노트 N개 저장을 누르면 내 노트에 남아요. 다음엔 이어서 공부하기로 여기서 시작해요.' },
     { id: '10-connect', title: '내 AI 연결하기',
-      body: '지금까지 본 답은 연습용 튜터의 답이에요. 설정(⌘,)의 AI 연결에서 쓰던 구독을 연결하면 내 자료를 진짜로 읽고 답해요. Claude Code나 Codex CLI도 고를 수 있어요.',
-      action: 'ChatGPT로 로그인을 누르고 브라우저에서 승인하면 끝이에요.' }
+      body: '지금까지 체험한 답변은 연습용 튜터의 예시였어요. 설정(⌘,)의 AI 연결에서 쓰던 구독을 연결하면 내 실제 자료를 바탕으로 질문에 답변해 줘요. Claude Code나 Codex CLI도 선택할 수 있어요.',
+      action: 'ChatGPT로 로그인을 누르고 브라우저에서 승인해 보세요.' }
   ];
   var BUTTONS = [
-    ['tree', '자료·노트 목록', '강의자료(원본, 🔒)와 내 노트가 과목별로 있어요. 폴더를 우클릭하면 새 폴더·과목 연결을 할 수 있어요.'],
-    ['add', '+ 자료 추가', 'PDF·슬라이드·이미지를 넣어요. 넣으면 검색할 수 있게 읽고 노트로 정리해요.'],
-    ['quick', '빠르게 열기 (⌘K)', '파일 이름을 몇 글자만 쳐서 노트나 PDF를 바로 열어요.'],
-    ['sidebar', '목록 접기 (⌘\\)', '왼쪽 목록을 접어서 PDF를 넓게 봐요.'],
-    ['settings', '설정 (⌘,)', 'AI 연결, 사용량, 화면 테마·튜터 글씨 크기, 대화 내보내기, 정보·의견이 있어요.'],
-    ['course', '과목 칩', '튜터가 어느 과목 기준으로 답할지예요. 기본은 열린 파일을 따라 자동이고, 눌러서 직접 고를 수 있어요.'],
-    ['model', 'AI·모델 메뉴', '연결한 AI와 모델, 추론 강도(낮음·보통·높음)를 바꾸고 구독 사용량을 봐요.'],
-    ['history', '채팅 기록', '지난 대화를 날짜별로 다시 열고, 이름 바꾸기·내보내기·삭제를 해요.'],
-    ['newchat', '새 대화', '지금 대화를 두고 새 주제로 시작해요.'],
-    ['tutorfold', '튜터 접기 (⌘L)', '튜터를 접고 펼쳐요. 펼치면 입력창에 바로 커서가 가요.'],
-    ['shortcuts', '숏컷', '이어서 공부하기 · 복습하자(범위 고르기) · 내가 이해한 게 맞아? · 내용 찾아줘 · 오늘은 여기까지. 열린 파일에 맞는 것만 먼저 보이고 나머지는 더보기에 있어요. 아래 줄에서 공부 방식(꼼꼼히·훑기·과제 풀이)을 골라요.'],
-    ['overload', '🧠 인지부하 온다', '방금 답을 작은 단계로 쪼개서 하나씩 다시 설명해요.'],
-    ['input', '질문 입력창', 'Enter로 보내고 Shift+Enter로 줄을 바꿔요. "이거 3강 자료야"처럼 말하면 첨부한 파일을 과목 자료로 저장해요.'],
-    ['attach', '첨부', '파일이나 이미지를 질문에 붙여요. 화면 캡처를 붙여 물어봐도 돼요.']
+    ['tree', '자료·노트 목록', '과목별 원본 강의자료(🔒)와 마크다운 노트가 모여 있어요. 폴더를 우클릭하면 새 폴더를 만들거나 기존 과목 폴더를 연결할 수 있어요.'],
+    ['add', '+ 자료 추가', 'PDF, 슬라이드, 이미지 자료를 넣어요. 넣으면 검색할 수 있게 색인하고 요약 노트까지 정리해 둬요.'],
+    ['quick', '빠르게 열기 (⌘K)', '파일 이름을 몇 글자만 검색해서 원하는 노트나 PDF를 바로 열어요.'],
+    ['sidebar', '목록 접기 (⌘\\)', '왼쪽 탐색기를 접어서 PDF와 노트를 넓게 봐요.'],
+    ['settings', '설정 (⌘,)', 'AI 연결, 사용량, 테마 및 글씨 크기 조절, 대화 내보내기, 의견 보내기 메뉴가 있어요.'],
+    ['course', '과목 칩', '튜터가 어느 과목 기준으로 답변할지 정해요. 기본은 열린 파일에 맞춰 자동이고, 눌러서 직접 고를 수도 있어요.'],
+    ['model', 'AI·모델 메뉴', '연결된 AI와 모델, 추론 강도(낮음·보통·높음)를 바꾸고 구독 사용량을 확인해요.'],
+    ['history', '채팅 기록', '지난 대화를 날짜별로 다시 열어보고, 제목 변경이나 내보내기, 삭제를 진행해요.'],
+    ['newchat', '새 대화', '지금 대화를 두고 새로운 주제로 공부를 시작해요.'],
+    ['tutorfold', '튜터 접기 (⌘L)', '튜터 패널을 접고 펼쳐요. 펼치면 입력창에 바로 커서가 가요.'],
+    ['shortcuts', '숏컷', '이어서 공부하기, 복습하자(범위 선택), 이해 확인 등 자주 쓰는 요청을 모아둔 버튼이에요. 아래 줄에서 공부 방식(꼼꼼히·훑기·과제 풀이)을 골라요.'],
+    ['overload', '🧠 인지부하 온다', '방금 받은 답변을 작은 단계로 나누어 하나씩 차근차근 다시 설명해요.'],
+    ['input', '질문 입력창', '궁금한 점을 자유롭게 입력해요. Enter로 보내고 Shift+Enter로 줄을 바꿔요.'],
+    ['attach', '첨부', '파일이나 이미지를 질문에 함께 붙여요. 화면 캡처를 붙여넣어 물어봐도 돼요.']
   ];
 
   function place(el, b) {
