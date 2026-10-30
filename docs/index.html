@@ -88,6 +88,10 @@ section + section { border-top: 1px solid var(--line); }
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--fg); color: var(--bg); }
 .btn-primary:hover { background: var(--accent); color: var(--accent-fg); }
+.btn-dl { background: linear-gradient(135deg, #17a673, #0b7a55); color: #fff; font-weight: 700; padding: 16px 32px; font-size: 18px; box-shadow: 0 6px 20px rgba(23, 166, 115, .45), inset 0 1px 0 rgba(255, 255, 255, .25); }
+.btn-dl:hover { background: linear-gradient(135deg, #1fc088, #0d8a62); color: #fff; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(23, 166, 115, .55), inset 0 1px 0 rgba(255, 255, 255, .25); }
+.btn-dl svg { width: 22px; height: 22px; }
+.nav .btn-dl { padding: 8px 18px; font-size: 14px; box-shadow: 0 3px 10px rgba(23, 166, 115, .4); }
 .btn-ghost { background: var(--raised); color: var(--fg); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--muted); }
 .btn svg { width: 18px; height: 18px; flex: none; }
@@ -297,7 +301,7 @@ footer a { color: var(--muted); }
       <a href="#faq">자주 묻는 질문</a>
       <a href="#feedback">의견 보내기</a>
     </div>
-    <a class="btn btn-primary" href="#install" data-dl="auto-short">다운로드</a>
+    <a class="btn btn-dl" href="#install" data-dl="auto-short">다운로드</a>
   </div>
 </nav>
 
@@ -315,7 +319,7 @@ footer a { color: var(--muted); }
     <p class="sub">강의 PDF를 넣고 질문하면 자료 쪽수를 짚어가며 설명하고, 오늘 배운 내용과 헷갈린 점을 직접 수정할 수 있는 노트로 정리해 줘요.</p>
 
     <div class="dl-row">
-      <a class="btn btn-primary" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
+      <a class="btn btn-dl" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span data-dl-label>SSAM 다운로드</span>
       </a>
@@ -784,7 +788,7 @@ footer a { color: var(--muted); }
     <h2>오늘 공부할 강의자료 하나로 가볍게 시작해 보세요</h2>
     <p>예시 과목 둘러보기로 5분 만에 사용법을 익힐 수 있어요.</p>
     <div class="dl-row">
-      <a class="btn btn-primary" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
+      <a class="btn btn-dl" data-dl="auto" href="https://github.com/DH-WEST-coder/team4-study-releases/releases/latest">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span data-dl-label>SSAM 다운로드</span>
       </a>
