@@ -14,20 +14,20 @@
 <style>
 /* 한 페이지 랜딩: 고정 메뉴 → 히어로(다운로드) → 장점 → 기능(사진과 글 번갈아) → 설치 → 사용법 → AI 연결 → FAQ → 의견 → 다운로드 */
 :root {
-  --bg: #fbfcfa;
-  --surface: #f1f4f1;
-  --raised: #ffffff;
-  --fg: #17211c;
-  --muted: #56645c;
-  --line: #dce3de;
-  --accent: #1d6a51;
+  --bg: #f8f7f3;
+  --surface: #efede7;
+  --raised: #fffefc;
+  --fg: #1b1d21;
+  --muted: #5a5d64;
+  --line: #e0ddd5;
+  --accent: #0F4C81;
   --accent-fg: #ffffff;
-  --accent-soft: #e2f0e9;
+  --accent-soft: #e3ebf3;
   --hl: rgba(255, 221, 64, 0.55);
-  --code-bg: #17211c;
-  --code-fg: #e6eee9;
-  --win: #0a5fb4;
-  --shadow: 0 1px 2px rgba(23, 33, 28, .06), 0 8px 28px rgba(23, 33, 28, .08);
+  --code-bg: #1b1d21;
+  --code-fg: #e8e9ec;
+  --win: #0e6b73;
+  --shadow: 0 1px 2px rgba(30, 25, 15, .06), 0 8px 28px rgba(30, 25, 15, .08);
   --font: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --wrap: 1120px;
@@ -35,17 +35,17 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1512; --surface: #161e1a; --raised: #1b2520; --fg: #e7eee9; --muted: #9babA2;
-    --line: #2a3630; --accent: #63c99f; --accent-fg: #0c1712; --accent-soft: #1b3127;
-    --hl: rgba(255, 214, 64, 0.32); --code-bg: #0a0f0c; --code-fg: #dfe8e2; --win: #4ea2f0;
+    --bg: #121316; --surface: #181a1e; --raised: #1e2025; --fg: #ebecef; --muted: #a3a7af;
+    --line: #2c2f35; --accent: #8ab4e8; --accent-fg: #0b1a2b; --accent-soft: #1b2a3c;
+    --hl: rgba(255, 214, 64, 0.32); --code-bg: #0d0e10; --code-fg: #e0e2e6; --win: #5cc4cc;
     --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f1512; --surface: #161e1a; --raised: #1b2520; --fg: #e7eee9; --muted: #9babA2;
-  --line: #2a3630; --accent: #63c99f; --accent-fg: #0c1712; --accent-soft: #1b3127;
-  --hl: rgba(255, 214, 64, 0.32); --code-bg: #0a0f0c; --code-fg: #dfe8e2; --win: #4ea2f0;
+  --bg: #121316; --surface: #181a1e; --raised: #1e2025; --fg: #ebecef; --muted: #a3a7af;
+  --line: #2c2f35; --accent: #8ab4e8; --accent-fg: #0b1a2b; --accent-soft: #1b2a3c;
+  --hl: rgba(255, 214, 64, 0.32); --code-bg: #0d0e10; --code-fg: #e0e2e6; --win: #5cc4cc;
   --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
   color-scheme: dark;
 }
@@ -88,10 +88,10 @@ section + section { border-top: 1px solid var(--line); }
 .btn:active { transform: translateY(1px); }
 .btn-primary { background: var(--fg); color: var(--bg); }
 .btn-primary:hover { background: var(--accent); color: var(--accent-fg); }
-.btn-dl { background: linear-gradient(135deg, #17a673, #0b7a55); color: #fff; font-weight: 700; padding: 16px 32px; font-size: 18px; box-shadow: 0 6px 20px rgba(23, 166, 115, .45), inset 0 1px 0 rgba(255, 255, 255, .25); }
-.btn-dl:hover { background: linear-gradient(135deg, #1fc088, #0d8a62); color: #fff; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(23, 166, 115, .55), inset 0 1px 0 rgba(255, 255, 255, .25); }
+.btn-dl { background: #0F4C81; color: #fff; font-weight: 700; padding: 16px 32px; font-size: 18px; box-shadow: 0 6px 20px rgba(15, 76, 129, .35), inset 0 1px 0 rgba(255, 255, 255, .2); }
+.btn-dl:hover { background: #1a5d99; color: #fff; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(15, 76, 129, .45), inset 0 1px 0 rgba(255, 255, 255, .2); }
 .btn-dl svg { width: 22px; height: 22px; }
-.nav .btn-dl { padding: 8px 18px; font-size: 14px; box-shadow: 0 3px 10px rgba(23, 166, 115, .4); }
+.nav .btn-dl { padding: 8px 18px; font-size: 14px; box-shadow: 0 3px 10px rgba(15, 76, 129, .3); }
 .btn-ghost { background: var(--raised); color: var(--fg); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--muted); }
 .btn svg { width: 18px; height: 18px; flex: none; }
@@ -177,7 +177,7 @@ section + section { border-top: 1px solid var(--line); }
 .mock-win .b { font-size: 13px; padding: 6px 18px; border: 1px solid rgba(255,255,255,.7); }
 .mock-win .b.run { outline: 2px dashed #ffe14d; outline-offset: 3px; }
 .mock-mac { background: #ececec; color: #1d1d1f; padding: 20px 22px 16px; text-align: center; font-family: -apple-system, var(--font); }
-.mock-mac .ic { width: 44px; height: 44px; margin: 0 auto 10px; border-radius: 10px; background: linear-gradient(135deg, #2e8b67, #1d6a51); }
+.mock-mac .ic { width: 44px; height: 44px; margin: 0 auto 10px; border-radius: 10px; background: #0F4C81; }
 .mock-mac .t { font-size: 13px; font-weight: 700; line-height: 1.4; }
 .mock-mac p { font-size: 11.5px; color: #555; margin-top: 6px; line-height: 1.45; }
 .mock-mac .b { display: block; margin-top: 12px; background: #fff; border-radius: 6px; padding: 5px; font-size: 13px; border: 1px solid #ccc; }
@@ -375,12 +375,12 @@ footer a { color: var(--muted); }
       <div>
         <span class="them">매번 상황 설명부터 다시 하기</span>
         <span class="us">지난 공부에 이어서 시작</span>
-        <p>과목 Hub에 적힌 진도와 다음 시작점을 튜터가 기억해 둬서, '이어서 공부하기' 버튼 하나로 곧바로 시작해요.</p>
+        <p>과목 Hub에 적힌 진도와 다음 시작점을 튜터가 기억해 둬서, '이어서 공부하기' 버튼 하나로 곧바로 시작해요. 마감하지 않고 끝낸 날의 맞힌 것·틀린 것도 다음 대화에서 이어져요.</p>
       </div>
       <div>
         <span class="them">끄덕이며 읽고 넘어가기</span>
         <span class="us">직접 맞혔는지로 판단</span>
-        <p>복습할 땐 질문부터 던져요. 힌트 없이 스스로 맞혀야 온전히 이해한 것으로 기록하고, 틀린 건 헷갈리는 목록에 남겨 둬요.</p>
+        <p>복습할 땐 질문부터 던져요. 힌트 없이 스스로 맞히거나 묻지 않고 스스로 설명해 내야 온전히 이해한 것으로 기록하고, 틀린 건 헷갈리는 목록에 남겨 둬요.</p>
       </div>
     </div>
   </div>
@@ -453,6 +453,7 @@ footer a { color: var(--muted); }
           <h3>공부를 마칠 땐 기록 카드</h3>
           <p><strong>오늘은 여기까지</strong>를 누르면 오늘 배운 개념, 헷갈린 내용, 맞힌 문제와 틀린 문제, 다음 공부 시작점을 한 장의 카드로 정리해 줘요.</p>
           <p>노트에 어떻게 반영될지 미리 확인하고 내용을 직접 고칠 수 있어요. 튜터의 정답 판정이 잘못됐다면 클릭해서 바로 수정할 수 있어요.</p>
+          <p>저장한 뒤에도 안심이에요. 저장할 때마다 바뀌기 전 노트가 남아서, 노트 아래 <strong>이전 판</strong>에서 골라 되돌릴 수 있어요.</p>
           <p>노트는 단순 대화 복사본이 아니라 혼자 다시 복습할 수 있는 교재 형태로 다듬어져 저장돼요. 오답은 <strong>자주 틀리는 것</strong>에 모이고, 다시 볼 항목에는 알맞은 복습 일정이 자동으로 잡혀요.</p>
         </div>
         <div class="f-shot"><img src="screenshots/06-proposal.png" width="1440" height="900" loading="lazy" alt="오늘 배운 개념과 다음 시작점이 정리된 기록 카드"></div>
@@ -707,6 +708,10 @@ footer a { color: var(--muted); }
       <details>
         <summary>이용 요금이 있나요?</summary>
         <div class="a"><p>SSAM 앱 자체는 무료예요. AI 질문 답변은 내가 연결한 ChatGPT나 Claude 구독 플랜의 사용량을 써요. 질문이 많아지면 해당 서비스의 질문 횟수 제한(시간당·주간 한도)에 닿을 수 있고, 남은 사용량은 설정 → 사용량 화면에서 확인할 수 있어요.</p></div>
+      </details>
+      <details>
+        <summary>Obsidian으로 쓰던 폴더를 그대로 열어도 되나요?</summary>
+        <div class="a"><p>돼요. 수식(<code>$…$</code>), 노트 속 그림, 콜아웃(<code>&gt; [!summary]</code>)이 Obsidian과 같은 모양으로 보여요. 설정 → 화면 맨 아래 <strong>고급</strong>에서 맥락 파일 이름과 목록에서 숨길 폴더를 폴더에 맞게 정할 수 있어요. 강의자료가 많다면 이번 학기 과목에 ☆ 즐겨찾기를 해 두세요. 즐겨찾기한 과목만 미리 읽고 나머지는 열 때 읽어서 가벼워요.</p></div>
       </details>
       <details>
         <summary>어떤 운영체제를 지원하나요?</summary>
